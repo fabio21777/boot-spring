@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: boot
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${DB_URL:jdbc:postgresql://localhost:5439/boot}
+    username: ${DB_USERNAME:boot}
+    password: ${DB_PASSWORD:boot}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+application:
+  security:
+    jwt:
+      secret-key: ${JWT_GENERATOR_SIGNATURE_SECRET:pleaseChangeThisSecretForANewOne_404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970}
+      expiration: ${JWT_GENERATOR_ACCESS_TOKEN_EXPIRATION:86400000}
+      refresh-token:
+        expiration: ${JWT_GENERATOR_REFRESH_TOKEN_EXPIRATION:604800000}
