@@ -1,4 +1,4 @@
-package com.boot.auth.validation;
+package com.boot.security.auth.validation;
 
 import com.boot.security.user.UserRepository;
 import jakarta.validation.ConstraintValidator;

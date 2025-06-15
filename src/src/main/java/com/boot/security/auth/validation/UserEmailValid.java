@@ -1,4 +1,4 @@
-package com.boot.auth.validation;
+package com.boot.security.auth.validation;
 
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;

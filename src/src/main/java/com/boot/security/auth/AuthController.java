@@ -1,4 +1,4 @@
-package com.boot.auth;
+package com.boot.security.auth;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -23,7 +23,7 @@ public class AuthController {
   public ResponseEntity<AuthenticationResponse> register(
       @RequestBody @Valid RegisterRequest request
   ) {
-    return ResponseEntity.ok(service.register(request));
+    return ResponseEntity.status(201).body(service.register(request));
   }
   @PostMapping("/authenticate")
   public ResponseEntity<AuthenticationResponse> authenticate(

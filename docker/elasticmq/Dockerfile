@@ -1,0 +1,1 @@
+FROM softwaremill/elasticmq-native

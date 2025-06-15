@@ -1,5 +1,6 @@
 package com.boot.security.user;
 
+import com.boot.domain.BaseDomain;
 import com.boot.security.token.Token;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -18,11 +19,7 @@ import java.util.List;
 @AllArgsConstructor
 @Entity
 @Table(name = "_user")
-public class User implements UserDetails {
-
-  @Id
-  @GeneratedValue
-  private Integer id;
+public class User extends BaseDomain implements UserDetails {
   @Column(nullable = false)
   private String firstname;
   @Column(nullable = true)

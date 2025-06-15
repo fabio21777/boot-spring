@@ -1,5 +1,6 @@
 package com.boot.security.token;
 
+import com.boot.domain.BaseDomain;
 import com.boot.security.user.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -12,11 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Token {
-
-  @Id
-  @GeneratedValue
-  public Integer id;
+public class Token extends BaseDomain {
 
   @Column(unique = true)
   public String token;

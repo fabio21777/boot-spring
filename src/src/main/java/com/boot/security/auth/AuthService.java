@@ -1,4 +1,4 @@
-package com.boot.auth;
+package com.boot.security.auth;
 
 
 import com.boot.security.config.JwtService;
@@ -16,6 +16,7 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.io.IOException;
 import java.util.List;
@@ -29,6 +30,7 @@ public class AuthService {
   private final JwtService jwtService;
   private final AuthenticationManager authenticationManager;
 
+  @Transactional
   public AuthenticationResponse register(RegisterRequest request) {
     User user = User.builder()
             .firstname(request.getFirstname())
@@ -67,7 +69,7 @@ public class AuthService {
   }
 
   private void saveUserToken(User user, String jwtToken) {
-    tokenRepository.save( Token.builder()
+    tokenRepository.saveAndFlush(Token.builder()
             .user(user)
             .token(jwtToken)
             .tokenType(TokenType.BEARER)

@@ -1,6 +1,6 @@
-package com.boot.auth;
+package com.boot.security.auth;
 
-import com.boot.auth.validation.UserEmailValid;
+import com.boot.security.auth.validation.UserEmailValid;
 import com.boot.security.user.Role;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

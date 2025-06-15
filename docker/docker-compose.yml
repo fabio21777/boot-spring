@@ -2,12 +2,12 @@ version: '3'
 
 services:
   db:
-    build: ./docker/postgresql
+    build: ./postgresql
     container_name: boot
     ports:
       - 5439:5432
   queues:
-    build: ./docker/elasticmq
+    build: .  /elasticmq
     container_name: elasticmq
     ports:
       - 9324:9324

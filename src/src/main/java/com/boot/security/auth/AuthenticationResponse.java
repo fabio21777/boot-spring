@@ -1,4 +1,4 @@
-package com.boot.auth;
+package com.boot.security.auth;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
