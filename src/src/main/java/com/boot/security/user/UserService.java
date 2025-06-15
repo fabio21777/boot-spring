@@ -1,4 +1,4 @@
-package com.boot.boot.security.user;
+package com.boot.security.user;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

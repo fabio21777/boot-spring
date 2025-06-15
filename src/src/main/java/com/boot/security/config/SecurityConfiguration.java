@@ -1,4 +1,4 @@
-package com.boot.boot.security.config;
+package com.boot.security.config;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -13,9 +13,9 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.authentication.logout.LogoutHandler;
 
-import static com.boot.boot.security.user.Permission.*;
-import static com.boot.boot.security.user.Role.ADMIN;
-import static com.boot.boot.security.user.Role.MANAGER;
+import static com.boot.security.user.Permission.*;
+import static com.boot.security.user.Role.ADMIN;
+import static com.boot.security.user.Role.MANAGER;
 import static org.springframework.http.HttpMethod.*;
 import static org.springframework.security.config.http.SessionCreationPolicy.STATELESS;
 

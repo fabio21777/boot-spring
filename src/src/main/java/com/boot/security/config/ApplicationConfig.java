@@ -1,7 +1,7 @@
-package com.boot.boot.security.config;
+package com.boot.security.config;
 
-import com.boot.boot.security.auditing.ApplicationAuditAware;
-import com.boot.boot.security.user.UserRepository;
+import com.boot.security.auditing.ApplicationAuditAware;
+import com.boot.security.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -48,5 +48,6 @@ public class ApplicationConfig {
   public PasswordEncoder passwordEncoder() {
     return new BCryptPasswordEncoder();
   }
+
 
 }

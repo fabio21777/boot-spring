@@ -1,4 +1,4 @@
-package com.boot.boot.security.config;
+package com.boot.security.config;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

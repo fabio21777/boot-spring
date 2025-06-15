@@ -1,4 +1,4 @@
-package com.boot.boot.security.token;
+package com.boot.security.token;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

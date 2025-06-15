@@ -1,6 +1,6 @@
-package com.boot.boot.security.user;
+package com.boot.security.user;
 
-import com.boot.boot.security.token.Token;
+import com.boot.security.token.Token;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

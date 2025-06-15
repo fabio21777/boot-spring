@@ -1,4 +1,4 @@
-package com.boot.boot.security.user;
+package com.boot.security.user;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import static com.boot.boot.security.user.Permission.*;
+import static com.boot.security.user.Permission.*;
 
 @RequiredArgsConstructor
 public enum Role {

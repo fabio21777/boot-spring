@@ -1,4 +1,4 @@
-package com.boot.boot.security.user;
+package com.boot.security.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

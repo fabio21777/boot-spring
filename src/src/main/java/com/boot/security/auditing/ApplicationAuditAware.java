@@ -1,9 +1,8 @@
-package com.boot.boot.security.auditing;
+package com.boot.security.auditing;
 
-import com.boot.boot.security.user.User;
+import com.boot.security.user.User;
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.lang.NonNull;
-import org.springframework.lang.NonNullApi;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

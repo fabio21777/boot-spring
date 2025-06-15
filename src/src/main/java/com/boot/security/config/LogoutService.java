@@ -1,6 +1,6 @@
-package com.boot.boot.security.config;
+package com.boot.security.config;
 
-import com.boot.boot.security.token.TokenRepository;
+import com.boot.security.token.TokenRepository;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;

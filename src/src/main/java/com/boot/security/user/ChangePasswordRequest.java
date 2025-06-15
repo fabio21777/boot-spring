@@ -1,4 +1,4 @@
-package com.boot.boot.security.user;
+package com.boot.security.user;
 
 import lombok.Builder;
 import lombok.Getter;
