@@ -6,11 +6,8 @@ services:
     container_name: boot
     ports:
       - 5439:5432
-  queues:
-    build: .  /elasticmq
-    container_name: elasticmq
+  storage:
+    build: ./s3
+    container_name: boot_s3
     ports:
-      - 9324:9324
-      - 9325:9325
-    volumes:
-      - ./elasticmq/config/custom.conf:/opt/elasticmq.conf
+      - 9444:9000
